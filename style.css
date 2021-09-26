@@ -2,6 +2,10 @@ body{
   background: black;
 }
 
+ul{
+  list-style-type: none;
+}
+
 .result{
   background-color: white;
   width: 600px;
