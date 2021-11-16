@@ -1,37 +1,87 @@
+
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@100;200;300;400;500;600;700&family=Roboto+Slab:wght@100;200;300;400;500;600;700&display=swap');
+
 body{
   background: black;
+  font-family: 'M PLUS Code Latin', sans-serif;
 }
 
 ul{
   list-style-type: none;
 }
 
+h2{
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+p{
+  font-weight: normal;
+  font-size: .9rem;
+}
+
+ul{
+  font-weight: normal;
+  font-size: .9rem;
+  padding-inline-start: 22px;
+}
+ul li{
+  text-indent: -1.5em;
+  margin-bottom: 10px;
+}
+
+
+a {
+  color: #39FF14;
+  text-decoration: none;
+}
+a:hover{
+  color: black;
+}
+
+::selection{
+  color:white;
+  text-shadow: 2px 2px #39FF14;
+}
+
 .result{
   background-color: white;
-  width: 600px;
-  height: 900px;
+  width: 544.1px;
+  height: 750px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   overflow: hidden;
+  filter: drop-shadow(0 0 0.75rem black);
 }
 
-#myBtn{
+/* #myBtn{
   position: fixed;
   top: 20px;
   right: 20px;
-  border: 2px solid green;
-  color: green;
-  background-color: transparent;
+  font-weight: 700;
+  border: 2px solid #39FF14;
+  color: black;
+  background-color: #39FF14;
   padding: 15px;
   border-radius: 50%;
   font-size: 25px;
   width: 30px;
-  height: 30px;
-  text-align: center;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
   cursor: pointer;
+} */
+
+#myBtn{
+  width: 50px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
 }
+
 
 .modal {
   display: none; /* Hidden by default */
@@ -51,14 +101,16 @@ ul{
 .modal-content {
   background-color: #fefefe;
   margin: auto;
-  padding: 20px;
+  padding: 15px;
   border: 1px solid #888;
-  width: 80%;
+  width: 20%;
+  border-width: 3px;
+  border-color: #39FF14;
 }
 
 /* The Close Button */
 .close {
-  color: #aaaaaa;
+  color: #39FF14;
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -69,4 +121,11 @@ ul{
   color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+
+#background-changer{
+  position: absolute;
+  left:30px;
+  width:30px;
+  bottom: 30px;
 }
